@@ -125,5 +125,5 @@ def expected_solution():
     return EXPECTED_DICT[str(input('Input the size: ')).upper()]
 
 
-# Executing expected solution
+# # Executing expected solution
 # print(expected_solution())
