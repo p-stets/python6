@@ -1,0 +1,31 @@
+/*Покрасьте меня в розовый цвет (color:pink).*/
+body > div > :first-child {
+	color: pink;
+}
+
+/*Покрасьте меня в серый цвет (color:grey).*/
+#greycol {
+	color:grey;
+}
+
+/*Покрасьте меня в красный цвет (color:red).*/
+body > div > div > p {
+	color: red;
+}
+
+/*Покрасьте меня в зеленый цвет (color:green).*/
+body > div > :nth-child(7) {
+	color:green;
+}
+
+/*Покрасьте меня в желтый цвет (color:yellow).*/
+body > div > :last-child {
+	color:yellow;
+}
+
+/*или*/
+
+/*Покрасьте меня в желтый цвет (color:yellow).*/
+.yellow {
+	color: yellow;
+}
