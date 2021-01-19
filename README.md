@@ -7,5 +7,10 @@
 - [GOGS (alvl)](http://gitlab.a-level.com.ua/)
 
 ### HTML+CSS Lessons
-1. [Lesson 1](http://doc.a-level.com.ua/markup__lesson01#triangularflagonpost1)
-2. [Lesson 2](http://doc.a-level.com.ua/markup__lesson02#triangularflagonpost1css) | [Additional taks for lesson 2](http://doc.a-level.com.ua/markup__lesson05)
+##### [Markup Lesson 1](http://doc.a-level.com.ua/markup__lesson01)
+##### [Markup Lesson 2](http://doc.a-level.com.ua/markup__lesson02)
+##### [Markup Lesson 5](http://doc.a-level.com.ua/markup__lesson05)
+
+### JS Lessons
+##### [Garevna JS](https://github.com/garevna/js-course/wiki)
+-[HW 01](https://github.com/garevna/js-course/wiki/hw-01)
