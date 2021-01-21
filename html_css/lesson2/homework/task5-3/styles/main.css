@@ -1,0 +1,45 @@
+.holder {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 20px 20px 0 0;
+	border: 2px solid black;
+	height: 100px;
+	width: 400px;
+	overflow:hidden;
+}
+
+.holder div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.holder > :first-child {
+	order: 1;
+	background-color: red;
+	width: calc(100% / 2);
+}
+
+.holder > :nth-child(2) {
+	order: 4;
+	width: calc(100% / 3);
+	background-color: blue;
+}
+
+.holder > :nth-child(3) {
+	order: 3;
+	width: calc(100% / 3);
+	background-color: purple;
+}
+
+.holder > :nth-child(4) {
+	order: 5;
+	width: calc(100% / 3);
+	background-color: green;
+}
+
+.holder > :nth-child(5) {
+	order: 2;
+	width: calc(100% / 2);
+	background-color: yellow;
+}
