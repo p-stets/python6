@@ -1,3 +1,17 @@
-for (var i = 0; i < Things.length; i++) {
-	Things[i]
+
+/*
+Нарисуте блок-схему алгоритма суммирования 10 чисел, кратных 5 ( начиная с 0 )
+просуммировать нужно десять чисел 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
+*/
+
+let last_number = 50;
+let sum = 0;
+
+for (var i = 0; i <= last_number; i++) {
+	if ( i % 5 !== 0){
+		continue;
+	}
+	sum += i;
 }
+
+console.log(sum)
