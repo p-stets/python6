@@ -1,4 +1,5 @@
-from .people.models import Recruiter, Programmer, Candidate
+from people.models import Recruiter, Programmer, Candidate
+
 
 def main():
 

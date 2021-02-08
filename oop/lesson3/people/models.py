@@ -11,6 +11,7 @@ class Employee(object):
     def check_salary(self, days_count):
         return days_count * self.daily_salary
 
+
 class Recruiter(Employee):
 
     def __str__(self):
@@ -19,6 +20,7 @@ class Recruiter(Employee):
     def work(self):
         return f'{super().work()} and start hiring'
 
+
 class Programmer(Employee):
 
     def __str__(self):
@@ -26,6 +28,7 @@ class Programmer(Employee):
 
     def work(self):
         return f'{super().work()} and start coding'
+
 
 class Candidate(object):
 
