@@ -14,6 +14,7 @@
 6.Переопределить методы __str__ для классов-наследников, чтоб они возвращали строку: “Должность: Имя”
 '''
 
+
 class Employee(object):
 
     def __init__(self, name, email, daily_salary):
@@ -27,6 +28,7 @@ class Employee(object):
     def check_salary(self, days_count):
         return days_count * self.daily_salary
 
+
 class Recruiter(Employee):
 
     def __str__(self):
@@ -35,6 +37,7 @@ class Recruiter(Employee):
     def work(self):
         return f'{super().work()} and start hiring'
 
+
 class Programmer(Employee):
 
     def __str__(self):
@@ -42,6 +45,7 @@ class Programmer(Employee):
 
     def work(self):
         return f'{super().work()} and start coding'
+
 
 # Creating a Recruiter instance
 emp_1 = Recruiter('Jane', 'jane@compamy.com', 223)
