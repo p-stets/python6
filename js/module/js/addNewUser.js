@@ -76,20 +76,32 @@ function onSubmit(event) {
         website: elements.website.value
     }
 
-    function validateMinLength(field, config) {
-        if (field.length < config.min_length) {
-            // errorField.placeholder = 'AAA'
-            errorField = document.getElementsByName(config.name)
-            console.log(errorField)
-            console.log(errorField.placeholder.value)
-            return
-            // console.log(config.name)
-        } else {
-            console.log('OK')
+    // a custom function to validate input
+    function validateMinLength(value, field_name) {
+        // find the correct element from the FORM_CONFIG
+        const scheme = FORM_CONFIG.filter((item) => item.name == field_name)[0]
+            // Check whether len is causing error
+        const result = value.length < scheme.min_length
+            // True - causing an error
+        if (result) {
+            // Searching for the field
+            const elem = event.target.querySelector(`input[name=${field_name}]`)
+                // Clear data
+            elem.value = ''
+                // Replace a placeholder with the error message
+            elem.placeholder = `${scheme.min_length} chars min`
+                // Apply a class to decorate error message
+            elem.classList.add('error')
+            return false
         }
+        return true
     }
 
-    validateMinLength(newUser.name, FORM_CONFIG[0])
+    const name_check = validateMinLength(newUser.name, 'name')
+    const email_check = validateMinLength(newUser.email, 'email')
+    const website_check = validateMinLength(newUser.website, 'website')
+        // false on any fail
+    if (!name_check || !email_check || !website_check) return false
 
     newUserForm = document.getElementById('new-user-form')
     newUserForm.remove()

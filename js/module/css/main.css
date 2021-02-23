@@ -12,6 +12,11 @@ user-list {
     width: 500px;
 }
 
+#list-container {
+    width: 500px;
+    align-self: center;
+}
+
 .user-card {
     border: 1px solid #9e9e9e;
     margin: 15px;
@@ -86,4 +91,8 @@ button.button-success {
 
 button.button-danger {
     background: red;
+}
+
+.error::placeholder {
+    color: red;
 }
